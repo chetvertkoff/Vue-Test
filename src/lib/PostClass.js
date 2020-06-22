@@ -52,6 +52,7 @@ class Post{
     newPost.title = title
     newPost.preview = body.slice(0,70).trim()
     newPost.body = body.trim()
+    newPost.commentCount = 0
 
     getPosts.push(newPost) 
     localStorage.setItem('data',JSON.stringify(getPosts))   
